@@ -11,7 +11,7 @@ function App() {
   const [message,setMessage]=useState("");
 
 
-  const baseURL="https://transactional-email-phi.vercel.app/"
+  const baseURL="https://email-automation-livid.vercel.app/"
 
 
   const handleSubmit = async(e) => {
