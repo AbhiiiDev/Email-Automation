@@ -1,7 +1,7 @@
 {
   "name": "automatedemail",
   "private": true,
-  "proxy": "https://email-sender-fgz2nbmhq-abhisheks-projects-e29b0ed2.vercel.app/",
+  "proxy": "https://email-sender-dun-ten.vercel.app/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
