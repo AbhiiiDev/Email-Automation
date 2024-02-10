@@ -27,14 +27,19 @@ function App() {
         }
   
       })
-      res.status(200).json({
-        success:true,
-        message:"email sent successfully"
-      })
-      alert("Email Sent successfully");
-      setEmail("");
-      setName("");
-    } catch (error) {
+      if (res.ok) {
+        // Response status is in the range 200-299
+        const responseData = await res.json();
+        alert("Email Sent successfully");
+        setMessage(responseData.message); // Set any message received from the server
+        setEmail("");
+        setName("");
+      } else {
+        // Response status is not in the range 200-299
+        const errorData = await res.json();
+        console.error("Email sending failed:", errorData.error);
+        // Handle the error, e.g., display an error message to the user
+      }} catch (error) {
       console.log(error)
     }
  
@@ -46,6 +51,8 @@ function App() {
   return (
     <>
      <div className="subscription-form-container">
+      <div><h2 style={{color:'blueviolet'}}>
+        Subscribe to our Mail Newsletter !</h2></div>
       <form className="form-style" onSubmit={handleSubmit}>
         <input
           type="text"
@@ -61,7 +68,7 @@ function App() {
           placeholder="Email ID"
           required
         />
-        <button type="submit">Submit</button>
+        <button type="submit">Subscribe :)</button>
       </form>
       {message && <p className="message">{message}</p>}
     </div>

@@ -67,13 +67,13 @@
 }
 
 .subscription-form-container button {
-  background-color: #007bff;
+  background-color: blueviolet;
   color: #fff;
   cursor: pointer;
 }
 
 .subscription-form-container button:hover {
-  background-color: #0056b3;
+  background-color: #894bb3;
 }
 
 .message {

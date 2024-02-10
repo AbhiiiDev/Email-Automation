@@ -4,14 +4,13 @@ const cors=require('cors');
 
 const app=express();
 
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
 
 const corsOptions = {
-    origin: "*",
+    origin: "https://transactional-email-oq1q7kbuy-abhisheks-projects-e29b0ed2.vercel.app/",
     credentials: true, //access-control-allow-credentials:true
     optionSuccessStatus: 200,
   };

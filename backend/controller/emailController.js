@@ -21,9 +21,9 @@ console.log(email,name);
 let emailOptions={
     from: process.env.SMTP_USER, // sender address
     to: email, // list of receivers
-    subject: `Nodemailer working fine Bro :)`, // Subject line
+    subject: `Confirmation of Subscribing :)`, // Subject line
     text: "Thanks for subscribing man !!!!", // plain text body
-    html: "<b>Hola  Amigo, Kaise ho ? theek ho ?</b>", // html body
+    html: "<h1>Thank you for subscribing !!!</h1><b>Hola  Amigo, Kaise ho ? theek ho ?</b>", // html body
 }
 try {
   const info=await transporter.sendMail(emailOptions);
