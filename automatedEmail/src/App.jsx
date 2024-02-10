@@ -1,6 +1,9 @@
 import { useState } from "react";
-
+// import dotenv from 'dotenv';
 import "./App.css";
+
+
+// dotenv.config();
 
 function App() {
   const [name, setName] = useState("");
@@ -8,7 +11,7 @@ function App() {
   const [message,setMessage]=useState("");
 
 
-  const baseURL="http://localhost:3000";
+  const baseURL="https://transactional-email-phi.vercel.app/"
 
 
   const handleSubmit = async(e) => {
