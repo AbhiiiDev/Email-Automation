@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 const corsOptions = {
-    origin: "https://transactional-email-oq1q7kbuy-abhisheks-projects-e29b0ed2.vercel.app/",
+    origin: "https://email-sender-fgz2nbmhq-abhisheks-projects-e29b0ed2.vercel.app/",
     credentials: true, //access-control-allow-credentials:true
     optionSuccessStatus: 200,
   };
