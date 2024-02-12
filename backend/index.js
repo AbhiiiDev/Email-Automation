@@ -16,10 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-
-
-
-app.use('/email',emailRoute)
+app.use('/',emailRoute)
 
 app.get('/',(req,res)=>{
     res.send("hey i have changed this  sever and it's working bro")
