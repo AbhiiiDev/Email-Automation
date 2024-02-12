@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/email',emailRoute)
 
 app.get('/',(req,res)=>{
-    res.send("hey this sever is working bro")
+    res.send("hey i have changed this  sever and it's working bro")
 })
 
 app.listen(3000,()=>{
