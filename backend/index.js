@@ -5,7 +5,7 @@ const cors=require('cors');
 const app=express();
 
 const corsOptions = {
-    origin: "https://email-automation-b1qu.vercel.app/",
+    origin: "https://email-automation-b1qu.vercel.app",
     credentials: true, //access-control-allow-credentials:true
     optionSuccessStatus: 200,
   };
