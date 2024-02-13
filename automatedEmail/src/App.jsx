@@ -33,7 +33,7 @@ function App() {
       if (res.ok) {
         // Response status is in the range 200-299
         const responseData = await res.json();
-        alert("Email Sent successfully");
+        // alert("Email Sent successfully");
         setMessage(responseData.message); // Set any message received from the server
         setEmail("");
         setName("");
