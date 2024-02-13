@@ -21,7 +21,7 @@ function App() {
       name:name,
     }
     try {
-      const res=await fetch(`'https://corsproxy.io/?'${baseURL}/email/sendEmail`,{
+      const res=await fetch(`https://corsproxy.io/?${baseURL}/email/sendEmail`,{
         method:"POST",
         body:JSON.stringify(dataSend),
         headers:{
